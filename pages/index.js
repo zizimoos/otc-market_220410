@@ -39,10 +39,21 @@ export default function Home() {
           <p>사업방법</p>
           <p>자본금으로 테더를 확보한다.</p>
           <p>주문과 입금을 받고, 테더를 사용해서 주문 코인을 사서보내준다.</p>
-          <p>수수료 3%가 영업이익이다.</p>
+          <p>현재 가격대비 수수료 3%가 영업이익이다.</p>
         </div>
-        <div className="page">문제점</div>
-        <div className="page">예상수익</div>
+        <div className="page">
+          <p>문제점</p>
+          <p>
+            불법자금, 보이스피싱, 마약 관련 자금과 연류시 문제발생 소지 있음.
+          </p>
+        </div>
+        <div className="page">
+          <p>예상수익</p>
+          <p>일 매출 1,000만원</p>
+          <p>일 수익 19만원</p>
+          <p>을 기준으로 계산한다.</p>
+          <p>테더 구매시 수수료 1.1%를 제외한 금액</p>
+        </div>
       </main>
 
       <footer>
