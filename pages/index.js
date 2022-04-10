@@ -1,6 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -11,59 +10,57 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main>
+        <div className="page">Hello World</div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="page">
+          <p>OTC market...</p>
+          <p>Over the Counter Market의 약자.</p>
+          <p>
+            우리나라 말로는 장외 시장이라고 하며 암호화폐 거래소 밖에서 거래되는
+            시장이다.
+          </p>
+          <p>
+            트레블룰의 적용등으로 보유 흔적을 은익할 수 있는 장외거래가 성장하고
+            있다.
+          </p>
+          <p>최대 장점은 리스크가 없다는 것이다.</p>
         </div>
+
+        <div className="page">
+          <p>시장조사</p>
+          <p>현재 20여군데가 성업중이다.</p>
+          <p>자체조사 구글검색결과 및 마켓스팟광고를 기준으로 조사한다.</p>
+          <p>월간 10억에서 60억까지 매출을 올리는 업체들이 있다.</p>
+          <p>대부분 사업자 등록 없이 영업중인 것으로 판단된다.</p>
+        </div>
+        <div className="page">
+          <p>전략</p>
+          <p>사업방법</p>
+          <p>자본금으로 테더를 확보한다.</p>
+          <p>주문과 입금을 받고, 테더를 사용해서 주문 코인을 사서보내준다.</p>
+          <p>수수료 3%가 영업이익이다.</p>
+        </div>
+        <div className="page">문제점</div>
+        <div className="page">예상수익</div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer>
+        <div>
+          Powered by <span className={styles.logo}></span>
+        </div>
       </footer>
+      <style jsx>{`
+        .page {
+          width: 900px;
+          height: 100vh;
+          margin: 10px auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      `}</style>
     </div>
-  )
+  );
 }
